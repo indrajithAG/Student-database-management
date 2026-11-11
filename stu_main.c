@@ -27,7 +27,7 @@ int main()
             case 'D':
                 printf("r/R : enter rollno to delete\n");
                 printf("n/N : enter name to delete\n");
-                printf("Enter choice: ");
+                printf("Enter choice:\n");
                 scanf(" %c", &choice);
                 del(&headptr,choice);
                 break;
