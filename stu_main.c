@@ -19,20 +19,24 @@ int main()
         scanf(" %c",&ch);
         switch(ch)
         {
-            case 'a'|'A':
+            case 'a':
+            case 'A':
                 add(&headptr);
                 break;
-            case 'd'|'D':
+            case 'd':
+            case 'D':
                 printf("r/R : enter rollno to delete\n");
                 printf("n/N : enter name to delete\n");
                 printf("Enter choice: ");
                 scanf(" %c", &choice);
                 del(&headptr,choice);
                 break;
-            case 's'|'S':
+            case 's':
+            case 'S':
                 show(headptr);
                 break;
-            case 'm'|'M':
+            case 'm':
+            case 'M':
                 printf("r/R : Search by rollno\n");
                 printf("n/N : Search by name\n");
                 printf("p/P : Search by percentage\n");
@@ -40,23 +44,28 @@ int main()
                 scanf(" %c",&choice);
                 mod(headptr,choice);
                 break;
-            case 'v'|'V':
+            case 'v':
+            case 'V':
                 save(headptr);
                 break;
-            case 't'|'T':
+            case 't':
+            case 'T':
                 printf("n/N : Sort with name\n");
                 printf("p/P : Sort with percentage\n");
                 printf("Enter choice: ");
                 scanf(" %c",&choice);
                 sort(headptr,choice);
                 break;
-            case 'l'|'L':
+            case 'l':
+            case 'L':
                 del_all(&headptr);
                 break;
-            case 'r'|'R':
+            case 'r':
+            case 'R':
                 rev(&headptr);
                 break;
-            case 'e'|'E':
+            case 'e':
+            case 'E':
                 printf("s/S : Save and exit\n");
                 printf("e/E : Exit without saving\n");
                 printf("Enter choice: ");
